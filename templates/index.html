@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоды для путешествий</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=acbd6e8d-6f1f-44b5-a784-15d8cf760e15&lang=ru_RU"></script>
+</head>
+<body>
+    <button id="themeToggle" class="theme-toggle" title="Переключить тему">
+        🌓
+    </button>
+
+    <div class="container">
+        <h1>Планировщик путешествий с прогнозом погоды</h1>
+
+        <div class="search-section">
+            <div class="search-wrapper">
+                <input type="text"
+                       id="citySearch"
+                       placeholder="Введите название города (минимум 2 буквы)">
+            </div>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+
+        <div class="selected-cities">
+            <h2>Выбранные города</h2>
+            <ul id="cityList"></ul>
+        </div>
+
+        <div id="map" class="map"></div>
+
+        <div class="forecast-settings">
+            <label for="daysCount">Количество дней прогноза:</label>
+            <input type="number"
+                   id="daysCount"
+                   min="1"
+                   max="7"
+                   value="7">
+            <button id="getForecast" class="btn-primary">
+                Получить прогноз
+            </button>
+        </div>
+
+        <div id="weatherResults" class="weather-results"></div>
+
+        <div class="route-recommendation">
+            <button id="getRouteRecommendation" class="btn-primary" onclick="window.location.href='/view_city'">
+                Получить рекомендации по маршруту
+            </button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

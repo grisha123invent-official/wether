@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рекомендации по маршруту</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=acbd6e8d-6f1f-44b5-a784-15d8cf760e15&lang=ru_RU"></script>
+</head>
+<body>
+    <button id="themeToggle" class="theme-toggle" title="Переключить тему">
+        🌓
+    </button>
+
+    <div class="container">
+        <h1>Рекомендации по маршруту</h1>
+
+        <div class="route-details">
+            <h2>Выбранные города</h2>
+            <div id="citiesList" class="cities-summary"></div>
+
+            <div id="routeMap" class="map"></div>
+
+            <div class="recommendations-section">
+                <h2>Оптимальный маршрут</h2>
+                <div id="routeRecommendations" class="route-recommendations">
+                    <!-- Здесь будут рекомендации -->
+                </div>
+
+                <div class="travel-tips">
+                    <h3>Советы для путешествия:</h3>
+                    <ul id="travelTips"></ul>
+                </div>
+
+                <div class="weather-summary">
+                    <h3>Общий прогноз погоды на маршруте:</h3>
+                    <div id="weatherSummary"></div>
+                </div>
+
+                <div class="packing-list">
+                    <h3>Рекомендуемые вещи для всего маршрута:</h3>
+                    <ul id="packingList"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <button onclick="window.location.href='/'" class="btn-primary">
+                Вернуться к выбору городов
+            </button>
+        </div>
+    </div>
+
+    <script src="/static/view_city.js"></script>
+</body>
+</html>
