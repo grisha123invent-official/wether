@@ -26,8 +26,8 @@ python app.py
 ## API ключи
 
 В проекте используются следующие API ключи:
-- YANDEX_API_KEY_GEOCODER="acbd6e8d-6f1f-44b5-a784-15d8cf760e15"
-- YANDEX_API_KEY_WEATHER="4b60bda4-c633-4d55-bbc1-3d9cd1410090"
+- YANDEX_API_KEY_GEOCODER="..."
+- YANDEX_API_KEY_WEATHER="..."
 
 ## Структура проекта
 
