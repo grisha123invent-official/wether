@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 # Initialize weather service with API keys
 weather_service = WeatherService(
-    geocoder_api_key="acbd6e8d-6f1f-44b5-a784-15d8cf760e15",
-    weather_api_key="4b60bda4-c633-4d55-bbc1-3d9cd1410090"
+    geocoder_api_key="",
+    weather_api_key=""
 )
 
 
